@@ -23,12 +23,13 @@ Things you may want to cover:
 
 * ...
 
-##members table
-|clouumn|type|options|
+## members table
 
+|Clouumn|Type|Options|
+|-------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
-##associasion
-belongs_to :group
-belongs_to :user
+### associasion
+-belongs_to :group
+-belongs_to :user
