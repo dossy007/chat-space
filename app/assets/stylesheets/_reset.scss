@@ -132,10 +132,10 @@ legend {
         background:#38AEF0;
         text-align:center;
     }
-    .chat-left {
+    &__left {
         width:300px;
         float:left;
-        .chat-left-user {
+        .chat__left_user {
             background-color:#253141;
             color:#FFFFFF;
             border: 20px solid #253141;
@@ -147,35 +147,40 @@ legend {
                 }
             }
         }
-        .chat-left-group {
+        .chat__left_group {
             height:100vh;
             background-color:#2f3e51;
-            border:20px solid #2f3e51;
+            border:20px 0px 0px 0px solid #2f3e51;
             padding-bottom:40px;
-            ul {
-                li {
+            .chat__left_group_name {
+                font-size: 15px;
+                color:#FFFFFF;
+            }
+            .chat__left_group_recent_text {
                 font-size:11px;
                 color:#FFFFFF;
-                }
             }
         }
     }
-    .chat-right {
+    &__right {
         width:calc(100vw - 300px);
         float:left;
-        .chat-right-group {
-            padding:35px 0px 0px 40px;
+        .chat__right_group {
+            padding:35px 40px 0px 40px;
             border:1px solid #eeeeee;
-            .chat-right-group-name {
+            .chat__right_group_name {
                 color:#333333;
                 font-size:20px;
+                padding:0 0 15px 0;
+            }
+            .chat__right_group_current_user {
+                font-size: 12px;
+                color:#999999;
             }
         }
-        .chat-right-text {
+        .chat__right_text {
             margin:46px 40px 0 0;
             padding:0px 40px;
-
         }
-
     }
 }
