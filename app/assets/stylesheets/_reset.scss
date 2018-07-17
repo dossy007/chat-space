@@ -127,6 +127,7 @@ legend {
 
 .chat {
     overflow:hidden;
+    width:100vw;
     header {
         background:#38AEF0;
         text-align:center;
@@ -137,29 +138,42 @@ legend {
         .chat-left-user {
             background-color:#253141;
             color:#FFFFFF;
-            li {
-                font-size:16px;
-                color:#FFFFFF;
-            }
-
-        }
-        .chat-left-group {
-            background-color:#2f3e51;
+            border: 20px solid #253141;
             ul {
-                font-size:15px;
-                color:#FFFFFF;
                 li {
-                    font-size:11px;
+                font-size:16px;
+                font-weight:bold;
+                color:#FFFFFF;
                 }
             }
         }
-
+        .chat-left-group {
+            height:100vh;
+            background-color:#2f3e51;
+            border:20px solid #2f3e51;
+            padding-bottom:40px;
+            ul {
+                li {
+                font-size:11px;
+                color:#FFFFFF;
+                }
+            }
+        }
     }
     .chat-right {
+        width:calc(100vw - 300px);
         float:left;
         .chat-right-group {
+            padding:35px 0px 0px 40px;
+            border:1px solid #eeeeee;
+            .chat-right-group-name {
+                color:#333333;
+                font-size:20px;
+            }
         }
         .chat-right-text {
+            margin:46px 40px 0 0;
+            padding:0px 40px;
 
         }
 
