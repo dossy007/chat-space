@@ -36,7 +36,7 @@ Things you may want to cover:
 ## groups table
 |Clouumn|Type|Options|
 |-------|----|-------|
-|group_name|string|index:true|
+|group_name|string|index:true,null:false|
 
 ## Associasion
 
