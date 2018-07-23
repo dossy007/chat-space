@@ -40,8 +40,9 @@ Things you may want to cover:
 |group_name|string|index:true,null:false,unique:true|
 
 ## Associasion
+- has_many:members_status
 - has_many:messages
-- has_many:users
+- has_many:users, through: :members_status
 
 ## messages table
 |Cloumn|Type|Options|
