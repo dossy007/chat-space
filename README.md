@@ -34,14 +34,14 @@ Things you may want to cover:
 - belongs_to :user
 
 ## groups table
-|Clouumn|Type|Options|
+|Cloumn|Type|Options|
 |-------|----|-------|
 |group_name|string|index:true,null:false,unique:true|
 
 ## Associasion
 
 ## messages table
-|Clouumn|Type|Options|
+|Cloumn|Type|Options|
 |-------|----|-------|
 |text|text|	|
 |image|string|	|
@@ -50,7 +50,7 @@ Things you may want to cover:
 ## Asociation
 
 ## users_groups_status table
-|Clouumn|Type|Options|
+|Cloumn|Type|Options|
 |-------|----|-------|
 |group_id|reference|foreign_key:true|
 |user_id|reference|foreign_key:true|
