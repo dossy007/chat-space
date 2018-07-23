@@ -52,7 +52,8 @@ Things you may want to cover:
 |user_id|reference|foreign_key:true|
 |group_id|reference|foreign_key:true|
 ## Asociation
-
+- belongs_to :users
+- belongs_to :groups
 ## members_status table
 |Cloumn|Type|Options|
 |-------|----|-------|
