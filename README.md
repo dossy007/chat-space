@@ -27,7 +27,7 @@ Things you may want to cover:
 
 |Cloumn|Type|Options|
 |-------|----|-------|
-|name|string|null:false,index:true,unique:true|
+|name|string|index:true,null:false,unique:true|
 
 ### Associasion
 - belongs_to :group
@@ -50,5 +50,8 @@ Things you may want to cover:
 ## Asociation
 
 ## users_groups_status table
-
+|Clouumn|Type|Options|
+|-------|----|-------|
+|group_id|reference|foreign_key:true|
+|user_id|reference|foreign_key:true|
 ## Asociation
