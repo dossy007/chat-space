@@ -45,9 +45,8 @@ Things you may want to cover:
 |-------|----|-------|
 |text|text|	|
 |image|string|	|
-|user_id|reference|foreign_key:true	|
-|group_id|reference|foreign_key:true	|
-
+|user_id|reference|foreign_key:true|
+|group_id|reference|foreign_key:true|
 ## Asociation
 
 ## users_groups_status table
