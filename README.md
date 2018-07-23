@@ -27,7 +27,7 @@ Things you may want to cover:
 
 |Cloumn|Type|Options|
 |-------|----|-------|
-|name|string|null:false,index:true|
+|name|string|null:false,index:true,unique:true|
 
 ### Associasion
 - belongs_to :group
@@ -36,13 +36,17 @@ Things you may want to cover:
 ## groups table
 |Clouumn|Type|Options|
 |-------|----|-------|
-|user_id|reference|foreign_key:true|
-|message_id|reference|foreign_key:true|
-|group_name|
+|group_name|string|index:true|
 
 ## Associasion
 
 ## messages table
+|Clouumn|Type|Options|
+|-------|----|-------|
+|text|text|	|
+|image|string|	|
+|user_id|reference|foreign_key:true	|
+|group_id|reference|foreign_key:true	|
 
 ## Asociation
 
