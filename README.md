@@ -30,7 +30,8 @@ Things you may want to cover:
 |name|string|index:true,null:false,unique:true|
 
 ### Associasion
-- has_many:
+- has_many:members_status
+- has_many:groups, through: :members_status
 - has_many:messages
 
 ## groups table
