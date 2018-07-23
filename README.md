@@ -31,8 +31,8 @@ Things you may want to cover:
 
 ### Associasion
 - has_many:members_status
-- has_many:groups, through: :members_status
 - has_many:messages
+- has_many:groups, through: :members_status
 
 ## groups table
 |Cloumn|Type|Options|
@@ -52,11 +52,14 @@ Things you may want to cover:
 |user_id|reference|foreign_key:true|
 |group_id|reference|foreign_key:true|
 ## Asociation
-- belongs_to :users
-- belongs_to :groups
+- belongs_to :user
+- belongs_to :group
+
 ## members_status table
 |Cloumn|Type|Options|
 |-------|----|-------|
 |group_id|reference|foreign_key:true|
 |user_id|reference|foreign_key:true|
 ## Asociation
+- belongs_to :user
+- belongs_to :group
