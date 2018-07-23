@@ -30,8 +30,8 @@ Things you may want to cover:
 |name|string|index:true,null:false,unique:true|
 
 ### Associasion
-- belongs_to :group
-- belongs_to :user
+- has_many:groups
+- has_many:messages
 
 ## groups table
 |Cloumn|Type|Options|
