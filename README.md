@@ -30,7 +30,7 @@ Things you may want to cover:
 |name|string|index:true,null:false,unique:true|
 
 ### Associasion
-- has_many:groups
+- has_many:
 - has_many:messages
 
 ## groups table
@@ -39,6 +39,8 @@ Things you may want to cover:
 |group_name|string|index:true,null:false,unique:true|
 
 ## Associasion
+- has_many:messages
+- has_many:users
 
 ## messages table
 |Cloumn|Type|Options|
@@ -49,7 +51,7 @@ Things you may want to cover:
 |group_id|reference|foreign_key:true|
 ## Asociation
 
-## users_groups_status table
+## members_status table
 |Cloumn|Type|Options|
 |-------|----|-------|
 |group_id|reference|foreign_key:true|
