@@ -30,19 +30,19 @@ Things you may want to cover:
 |name|string|index: true, null: false|
 
 ### Associasion
-- has_many:members_status
-- has_many:messages
-- has_many:groups, through: :members_status
+- has_many :members_status
+- has_many :messages
+- has_many :groups, through: :members_status
 
 ## groups table
 |Cloumn|Type|Options|
 |-------|----|-------|
-|group_name|string|index:true,null:false,unique:true|
+|name|string|null: false, unique: true|
 
 ## Associasion
-- has_many:members_status
-- has_many:messages
-- has_many:users, through: :members_status
+- has_many :members_status
+- has_many :messages
+- has_many :users, through: :members_status
 
 ## messages table
 |Cloumn|Type|Options|
