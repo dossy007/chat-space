@@ -56,7 +56,7 @@ Things you may want to cover:
 - belongs_to :user
 - belongs_to :group
 
-## members_status table
+## members table
 |Cloumn|Type|Options|
 |-------|----|-------|
 |group_id|references|foreign_key:true|
