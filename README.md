@@ -27,7 +27,7 @@ Things you may want to cover:
 
 |Cloumn|Type|Options|
 |-------|----|-------|
-|name|string|index:true,null:false,unique:true|
+|name|string|index: true, null: false|
 
 ### Associasion
 - has_many:members_status
