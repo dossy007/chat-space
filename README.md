@@ -49,8 +49,9 @@ Things you may want to cover:
 |-------|----|-------|
 |text|text|	|
 |image|string|	|
-|user_id|reference|foreign_key:true|
-|group_id|reference|foreign_key:true|
+|user_id|references|foreign_key:true|
+|group_id|references|foreign_key:true|
+
 ## Asociation
 - belongs_to :user
 - belongs_to :group
@@ -58,8 +59,9 @@ Things you may want to cover:
 ## members_status table
 |Cloumn|Type|Options|
 |-------|----|-------|
-|group_id|reference|foreign_key:true|
-|user_id|reference|foreign_key:true|
+|group_id|references|foreign_key:true|
+|user_id|references|foreign_key:true|
+
 ## Asociation
 - belongs_to :user
 - belongs_to :group
