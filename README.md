@@ -23,7 +23,7 @@ Things you may want to cover:
 
 * ...
 
-## members table
+## users table
 
 |Clouumn|Type|Options|
 |-------|----|-------|
@@ -33,3 +33,19 @@ Things you may want to cover:
 ### Associasion
 - belongs_to :group
 - belongs_to :user
+
+## group table
+|Clouumn|Type|Options|
+|-------|----|-------|
+|user_id|integer|
+|group_id|integer|
+|
+## Associasion
+
+## messages table
+
+## Asociation
+
+## users_group_status
+
+## Asociation
