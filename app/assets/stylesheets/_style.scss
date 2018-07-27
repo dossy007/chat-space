@@ -1,7 +1,7 @@
 
 
 .chat {
-    overflow:hidden;
+    overflow:auto;
     width:100vw;
     position:relative;
     header {
@@ -56,6 +56,7 @@
             }
         }
         .chat__right_text {
+            overflow: scroll;
             margin:46px 0px 40px 0px;
             padding:0px 40px;
             .chat__right_text_name {
@@ -71,7 +72,7 @@
             position:absolute;
             bottom:0;
             height:50px;
-            width:calc(100vw - 300px);
+            width:calc(100vw - 380px);
             border-top: 20px solid gray;
             border-bottom: 20px solid gray;
             border-left: 40px solid gray;
