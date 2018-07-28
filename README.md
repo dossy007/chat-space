@@ -23,33 +23,6 @@ Things you may want to cover:
 
 * ...
 
-## users table
-
-|Clouumn|Type|Options|
-|-------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
-
-### Associasion
-- belongs_to :group
-- belongs_to :user
-
-## group table
-|Clouumn|Type|Options|
-|-------|----|-------|
-|user_id|integer|
-|group_id|integer|
-|
-## Associasion
-
-## messages table
-
-## Asociation
-
-## users_group_status
-
-## Asociation
-=======
 |Cloumn|Type|Options|
 |-------|----|-------|
 |name|string|index: true, null: false|
