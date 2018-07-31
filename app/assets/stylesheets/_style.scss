@@ -1,123 +1,127 @@
 .chat {
-    overflow:auto;
-    width:100vw;
-    position:relative;
+  overflow:auto;
+  width:100vw;
+  position:relative;
     header {
-        background:#38AEF0;
-        text-align:center;
+      background:#38AEF0;
+      text-align:center;
     }
-    &__left {
-        width:300px;
-        float:left;
-        .chat__left_user {
-            background-color:#253141;
+  &__left {
+    width:300px;
+    float:left;
+    .chat__left_user {
+      background-color:#253141;
+      color:#FFFFFF;
+      border: 20px solid #253141;
+        ul {
+          li {
+            font-size:16px;
+            font-weight:bold;
             color:#FFFFFF;
-            border: 20px solid #253141;
-            ul {
-                li {
-                font-size:16px;
-                font-weight:bold;
-                color:#FFFFFF;
-                }
-            }
+          }
         }
-        .chat__left_group {
-            height:calc(100vw - 645px);
-            background-color:#2f3e51;
-            border:20px solid #2f3e51;
-            padding: 20px 0 40px 0;
+    }
+    .chat__left_group {
+      height:calc(100vw - 645px);
+      background-color:#2f3e51;
+      border:20px solid #2f3e51;
+      padding: 20px 0 40px 0;
+        ul {
+          li {
             .chat__left_group_name {
-                font-size: 15px;
-                color:#FFFFFF;
+              font-size: 15px;
+              color:#FFFFFF;
             }
             .chat__left_group_recent_text {
-                font-size:11px;
-                color:#FFFFFF;
+              font-size:11px;
+              color:#FFFFFF;
             }
+          }
         }
     }
-    &__right {
-        width:calc(100vw - 300px);
-        float:left;
-        .chat__right_group {
-            padding:30px 40px 0px 40px;
-            border:1px solid #eeeeee;
-            .chat__right_group_name {
-                color:#333333;
-                font-size:20px;
-                padding:0 0 15px 0;
-            }
-            .chat__right_group_current_user {
-                font-size: 12px;
-                color:#999999;
-                padding-bottom:10px;
-            }
-        }
+  }
+  &__right {
+    width:calc(100vw - 300px);
+    float:left;
+      .chat__right_group {
+        padding:30px 40px 0px 40px;
+        border:1px solid #eeeeee;
+          .chat__right_group_name {
+            color:#333333;
+            font-size:20px;
+            padding:0 0 15px 0;
+          }
+          .chat__right_group_current_user {
+            font-size: 12px;
+            color:#999999;
+            padding-bottom:10px;
+          }
+      }
         .chat__right_text {
-            overflow: scroll;
-            margin:46px 0px 40px 0px;
-            padding:0px 40px;
+          overflow: scroll;
+          margin:46px 0px 40px 0px;
+          padding:0px 40px;
             .chat__right_text_name {
-                font-size:16px;
-                font-weight: bold;
+              font-size:16px;
+              font-weight: bold;
             }
             .chat__right_text_text {
-                font-size:14px;
-                color:#434A54;
+              font-size:14px;
+              color:#434A54;
             }
         }
         .chat__right_footer {
-            position:absolute;
-            bottom:0;
-            height:50px;
-            width:calc(100vw - 380px);
-            border-top: 20px solid gray;
-            border-bottom: 20px solid gray;
-            border-left: 40px solid gray;
-            border-right: 40px solid gray;
+          position:absolute;
+          bottom:0;
+          height:50px;
+          width:calc(100vw - 380px);
+          border-top: 20px solid gray;
+          border-bottom: 20px solid gray;
+          border-left: 40px solid gray;
+          border-right: 40px solid gray;
             .chat__right_footer_body {
-                font-size:16px;
-                font-color:#434A54;
-                margin-left:50px;
+              font-size:16px;
+              font-color:#434A54;
+　　           margin-left:50px;
             }
             .submit_button {
-                padding:15px 40px;
-                font-size:1.2em;
-                color:white;
-                background-color: #38AEF0;
-                border-style: none;
-                height:50px;
+              padding:15px 40px;
+              font-size:1.2em;
+              color:white;
+              background-color: #38AEF0;
+              border-style: none;
+              height:50px;
             }
             dl.search_form{
-                position:relative;
+              position:relative;
             }
             dl.search_form dt{
-                margin-right:100px;
-                padding:8px;
-                background-color:#fff;
-                border:1px solid #aaa;
+              margin-right:100px;
+              padding:8px;
+              background-color:#fff;
+              border:1px solid #aaa;
             }
             dl.search_form dt input{
-                width:100%;
-                height:32px;
-                line-height:24px;
-                background:none;
-                border:none;
+              width:100%;
+　            height:32px;
+              line-height:24px;
+              background:none;
+              border:none;
             }
             dl.search_form dd{
-                position:absolute;
-                top:0;
-                right:0;
+              position:absolute;
+              top:0;
+              right:0;
             }
             dl.search_form dd button{
-                display:block;
-                width:100px;
-                height:50px;
-                color:#fff;
-                line-height:40px;
-                text-align:center;
-                background-color:#38AEF0;
-                border:1px solid #38AEF0;
+              display:block;
+              width:100px;
+              height:50px;
+              color:#fff;
+              line-height:40px;
+              text-align:center;
+              background-color:#38AEF0;
+              border:1px solid #38AEF0;
             }
         }
     }
