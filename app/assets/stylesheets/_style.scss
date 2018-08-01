@@ -1,6 +1,6 @@
 .chat {
   overflow:auto;
-  width:100vw;
+  height: 100vh;
   position:relative;
     header {
       background:#38AEF0;
@@ -10,14 +10,14 @@
     width:300px;
     float:left;
     .chat__left_user {
-      background-color:#253141;
-      color:#FFFFFF;
-      border: 20px solid #253141;
+      background-color: $Userback;
+      color:$White;
+      border: 20px solid $Userback;
         ul {
           li {
             font-size:16px;
             font-weight:bold;
-            color:#FFFFFF;
+            color:$White;
           }
         }
     }
@@ -26,17 +26,13 @@
       background-color:#2f3e51;
       border:20px solid #2f3e51;
       padding: 20px 0 40px 0;
-        ul {
-          li {
-            .chat__left_group_name {
-              font-size: 15px;
-              color:#FFFFFF;
-            }
-            .chat__left_group_recent_text {
-              font-size:11px;
-              color:#FFFFFF;
-            }
-          }
+        .chat__left_group_name {
+            font-size: 15px;
+            color:$White;
+        }
+        .chat__left_group_recent_text {
+            font-size:11px;
+            color:$White;
         }
     }
   }
@@ -79,10 +75,10 @@
           border-bottom: 20px solid gray;
           border-left: 40px solid gray;
           border-right: 40px solid gray;
-            .chat__right_footer_body {
+            .chat__right_footer {
               font-size:16px;
               font-color:#434A54;
-　　           margin-left:50px;
+              margin-left:50px;
             }
             .submit_button {
               padding:15px 40px;
@@ -103,7 +99,7 @@
             }
             dl.search_form dt input{
               width:100%;
-　            height:32px;
+              height:32px;
               line-height:24px;
               background:none;
               border:none;
