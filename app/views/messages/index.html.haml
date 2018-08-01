@@ -1,53 +1,28 @@
-    .chat
-      %header チャットグループが作成されました
-      .chat__left
-        .chat__left_user
-          %ul
-            %li nishi
-        .chat__left_group
-          %ul
-            %li.chat__left_group_name group-name
-            %li.chat__left_group_recent_text text
-
-      .chat__right
-        .chat__right_group
-          %ul
-            %li.chat__right_group_name techcamp
-            %li.chat__right_group_current_user membername :ddd
-        .chat__right_text
-          %ul
-            %li.chat__right_text_name nishi time
-            %li.chat__right_text_text
-              text
-              https://tech-master.s3.amazonaws.com/uploads/curriculums//ba2e9e609274fbd14137c38f23c53bf4.pnghttps://te
-        .chat__right_text
-          %ul
-            %li.chat__right_text_name nishi time
-            %li.chat__right_text_text
-              text
-              https://tech-master.s3.amazonaws.com/uploads/curriculums//ba2e9e609274fbd14137c38f23c53bf4.pnghttps://te
-        .chat__right_text
-          %ul
-            %li.chat__right_text_name nishi time
-            %li.chat__right_text_text
-              text
-              https://tech-master.s3.amazonaws.com/uploads/curriculums//ba2e9e609274fbd14137c38f23c53bf4.pnghttps://te
-        .chat__right_text
-          %ul
-            %li.chat__right_text_name nishi time
-            %li.chat__right_text_text
-              text
-              https://tech-master.s3.amazonaws.com/uploads/curriculums//ba2e9e609274fbd14137c38f23c53bf4.pnghttps://te
-        .chat__right_text
-          %ul
-            %li.chat__right_text_name nishi time
-            %li.chat__right_text_text
-              text
-              https://tech-master.s3.amazonaws.com/uploads/curriculums//ba2e9e609274fbd14137c38f23c53bf4.pnghttps://te
-        .chat__right_footer
-          %form{:action => "/", :method => "", :name => "search"}
-            %dl.search_form
-              %dt
-                %input{:name => "search", :placeholder => "Search", :type => "text", :value => "type a message"}/
-              %dd
-                %button Search
+.chat
+  %header チャットグループが作成されました
+  .chat__left
+    .chat__left_user
+      %ul
+        %li nishi
+    .chat__left_group
+      %ul
+        %li.chat__left_group_name group-name
+        %li.chat__left_group_recent_text text
+  .chat__right
+    .chat__right_group
+      %ul
+        %li.chat__right_group_name techcamp
+        %li.chat__right_group_current_user membername :ddd
+    .chat__right_text
+      %ul
+        %li.chat__right_text_name nishi time
+        %li.chat__right_text_text
+          text
+          https://tech-master.s3.amazonaws.com/uploads/curriculums//ba2e9e609274fbd14137c38f23c53bf4.pnghttps://te
+    .chat__right_footer
+      %form{:action => "/", :method => "", :name => "search"}
+        %dl.search_form
+          %dt
+            %input{:name => "search", :placeholder => "Search", :type => "text", :value => "type a message"}/
+          %dd
+            %button Search
