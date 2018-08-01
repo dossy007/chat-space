@@ -1,5 +1,5 @@
 .notice {
-  background:#38AEF0;
+  background:$blueback;
   text-align:center;
 }
 .chat {
@@ -63,7 +63,7 @@
             }
             .chat__right_text_text {
               font-size:14px;
-              color:#434A54;
+              color: $textcolor;
             }
         }
         .chat__right_footer {
@@ -77,14 +77,14 @@
           border-right: 40px solid gray;
             .chat__right_footer {
               font-size:16px;
-              font-color:#434A54;
+              font-color: $textcolor;
               margin-left:50px;
             }
             .submit_button {
               padding:15px 40px;
               font-size:1.2em;
               color:white;
-              background-color: #38AEF0;
+              background-color: $blueback;
               border-style: none;
               height:50px;
             }
@@ -116,8 +116,8 @@
               color:#fff;
               line-height:40px;
               text-align:center;
-              background-color:#38AEF0;
-              border:1px solid #38AEF0;
+              background-color: $blueback;
+              border:1px solid $blueback;
             }
         }
     }
