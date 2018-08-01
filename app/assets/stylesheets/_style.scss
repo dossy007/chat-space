@@ -11,14 +11,14 @@
     float:left;
     .chat__left_user {
       height:66px;
-      background-color: $Userback;
-      color:$White;
-      border: 20px solid $Userback;
+      background-color: $userback;
+      color:$white;
+      border: 20px solid $userback;
         ul {
           li {
             font-size:20px;
             font-weight:bold;
-            color:$White;          }
+            color:$white;          }
         }
     }
     .chat__left_group {
@@ -28,11 +28,11 @@
       padding: 20px 0 40px 0;
         .chat__left_group_name {
             font-size: 15px;
-            color:$White;
+            color:$white;
         }
         .chat__left_group_recent_text {
             font-size:11px;
-            color:$White;
+            color:$white;
         }
     }
   }
