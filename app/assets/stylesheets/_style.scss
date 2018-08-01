@@ -1,11 +1,11 @@
+.notice {
+  background:#38AEF0;
+  text-align:center;
+}
 .chat {
   overflow:auto;
   height: 100vh;
   position:relative;
-    header {
-      background:#38AEF0;
-      text-align:center;
-    }
   &__left {
     width:300px;
     float:left;
@@ -18,8 +18,7 @@
           li {
             font-size:20px;
             font-weight:bold;
-            color:$White;
-          }
+            color:$White;          }
         }
     }
     .chat__left_group {
