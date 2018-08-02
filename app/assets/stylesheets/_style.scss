@@ -14,12 +14,11 @@
       background-color: $userback;
       color:$white;
       border: 20px solid $userback;
-        ul {
-          li {
+        .chat__left_user_name {
             padding-top: 20px;
             font-size:20px;
             font-weight:bold;
-            color:$white;          }
+            color:$white;
         }
     }
     .chat__left_group {
