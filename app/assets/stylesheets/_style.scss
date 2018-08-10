@@ -30,7 +30,7 @@
         }
     }
     .chat__left_group {
-      height:calc(100vw - 645px);
+      height:calc(75vh);
       background-color:#2f3e51;
       border:20px solid #2f3e51;
       padding: 5px 0 40px 0;
@@ -45,6 +45,7 @@
     }
   }
   &__right {
+    height:100vh;
     width:calc(100vw - 300px);
     float:left;
       .chat__right_group {
