@@ -1,33 +1,20 @@
 .notice チャットグループが作成されました
 .chat
   .chat__left
-    .chat__left_user
-      .chat__left_user_name  nishi
-      .chat__left_user_new_group
-        = fa_icon 'edit'
-        .chat__left_user_edit
-        = fa_icon 'cog'
-    .chat__left_group
-      %ul
-        %li.chat__left_group_name tech_camp
-        %li.chat__left_group_recent_text あ
+    = render "chat__left_user"
+    = render "chat__left_group"
   .chat__right
     .chat__right_group
       %ul
         .chat__right_group_button  edit
         %li.chat__right_group_name techcamp
         %li.chat__right_group_current_user membername :ddd
-    .chat__right_text
-      %ul
-        %li.chat__right_text_name nishi
-        %li.chat__right_time 2018/8/8 14:00
-        %li.chat__right_text_text
-          text
-          https://tech-master.s3.amazonaws.com/uploads/curriculums//ba2e9e609274fbd14137c38f23c53bf4.pnghttps://te
+    = render "chat__right_text"
     .chat__right_footer
       %form{:action => "/", :method => "", :name => "search"}
         %dl.search_form
           %dt
             %input{:name => "search", :placeholder => "Search", :type => "text", :value => "type a message"}/
           %dd
-            %button Search
+            / = fa_icon 'image'
+            %button Send
