@@ -22,15 +22,16 @@
             float:left;
         }
         .chat__left_user_new_group {
+          margin-top: 10px;
+          margin-left:100px;
           float:left;
-          padding:25px 0px 0px 120px;
         }
         .chat__left_user_edit {
           float:left;
         }
     }
     .chat__left_group {
-      height:calc(75vh);
+      height:calc(100vh - 200px);
       background-color:#2f3e51;
       border:20px solid #2f3e51;
       padding: 5px 0 40px 0;
@@ -94,33 +95,31 @@
         .chat__right_footer {
           position:absolute;
           bottom:0;
-          height:50px;
+          height:30px;
           width:calc(100vw - 380px);
-          border-top: 20px solid $gray;
-          border-bottom: 20px solid $gray;
-          border-left: 40px solid $gray;
-          border-right: 40px solid $gray;
+          padding:20px 40px 40px 40px;
+          background-color: gray;
             .chat__right_footer {
               font-size:16px;
               font-color: $textcolor;
-              margin-left:50px;
-            }
-            .submit_button {
-              padding:15px 40px;
-              font-size:1.2em;
-              color:white;
-              background-color: $blueback;
-              border-style: none;
-              height:50px;
             }
             dl.search_form{
               position:relative;
             }
             dl.search_form dt{
-              margin-right:100px;
+              margin-right:130px;
               padding:8px;
               background-color:#fff;
               border:1px solid #aaa;
+              &::after {
+                font-family: "FontAwesome";
+                content: "\f03e";
+                position : relative ;
+                bottom : 1.5em ;
+                left:0.3em;
+                margin-right : 0.1em ;
+                float:right;
+              }
             }
             dl.search_form dt input{
               width:100%;
@@ -144,11 +143,14 @@
               background-color: $blueback;
               border:1px solid $blueback;
             }
+            button {
+              font-size: 20px;
+            }
         }
     }
     .clearfix:after {
-              display: block;
-              clear:both;
-              content: "";
-            }
+      display: block;
+      clear:both;
+      content: "";
+    }
 }
