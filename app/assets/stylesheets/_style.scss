@@ -22,13 +22,13 @@
         }
         .chat__left_user_new_group {
           &::before {
-             font-family: "FontAwesome";
-                content: "\f013";
-                position : relative ;
-                bottom : 1.5em ;
-                left:-4.0em;
-                margin-right : 0.1em ;
-                float:right;
+            font-family: "FontAwesome";
+            content: "\f013";
+            position : relative ;
+            bottom : 1.5em ;
+            left:-4.0em;
+            margin-right : 0.1em ;
+            float:right;
           }
           &::after {
                 font-family: "FontAwesome";
