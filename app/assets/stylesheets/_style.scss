@@ -15,10 +15,10 @@
       color:$white;
       border: 20px solid $userback;
         .chat__left_user_name {
-            padding-top: 20px;
-            font-size:20px;
-            font-weight:bold;
-            color:$white;
+          padding-top: 20px;
+          font-size:20px;
+          font-weight:bold;
+          color:$white;
         }
         .chat__left_user_new_group {
           &::before {
