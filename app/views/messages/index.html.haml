@@ -11,9 +11,9 @@
         %li.chat__right_group_current_user membername :ddd
     = render "chat__right_text"
     .chat__right_footer
-      %form{:action => "/", :method => "", :name => "search"}
+      %form{action: "/", method: "",name: "search"}
         %dl.search_form
           %dt
-            %input{:name => "search", :placeholder => "type a message", :type => "text", :value => ""}/
+            %input{name: "search",placeholder: "type a message",type: "text",value: ""}/
           %dd
             %button Send
