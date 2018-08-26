@@ -1,0 +1,51 @@
+.chat__left {
+    width: 300px;
+    float: left;
+    .chat__left_user {
+      height: 70px;
+      background-color: $userback;
+      color: $white;
+      border: 20px solid $userback;
+        .chat__left_user_name {
+          padding-top: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          color: $white;
+        }
+        .chat__left_user_new_group {
+          &::before {
+            font-family: "FontAwesome";
+            content: "\f013";
+            position: relative;
+            bottom: 1.5em;
+            left: -1.5em;
+            margin-right: 0.1em;
+            float: right;
+          }
+          &::after {
+            font-family: "FontAwesome";
+            content: "\f044";
+            position: relative;
+            bottom: 1.5em;
+            left: -2.0em;
+            margin-right: 0.1em;
+            margin-left: 50px;
+            float: right;
+          }
+        }
+    }
+    .chat__left_group {
+      height: calc(100vh - 195px);
+      background-color: #2f3e51;
+      border: 20px solid #2f3e51;
+      padding: 5px 0 40px 0;
+        .chat__left_group_name {
+          font-size: 15px;
+          color: $white;
+        }
+        .chat__left_group_recent_text {
+          font-size: 11px;
+          color: $white;
+        }
+    }
+  }
