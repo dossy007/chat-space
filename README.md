@@ -23,8 +23,6 @@ Things you may want to cover:
 
 * ...
 
-## users table
-
 |Cloumn|Type|Options|
 |-------|----|-------|
 |name|string|index: true, null: false|

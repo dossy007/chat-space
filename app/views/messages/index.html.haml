@@ -1,0 +1,19 @@
+.notice チャットグループが作成されました
+.chat
+  .chat__left
+    = render "chat__left_user"
+    = render "chat__left_group"
+  .chat__right
+    .chat__right_group
+      %ul
+        .chat__right_group_button  edit
+        %li.chat__right_group_name tech
+        %li.chat__right_group_current_user membername :ddd
+    = render "chat__right_text"
+    .chat__right_footer
+      %form{action: "/", method: "",name: "search"}
+        %dl.search_form
+          %dt
+            %input{name: "search",placeholder: "type a message",type: "text",value: ""}/
+          %dd
+            %button Send
