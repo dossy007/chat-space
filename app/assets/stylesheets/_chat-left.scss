@@ -13,25 +13,36 @@
           color: $white;
         }
         .chat__left_user_new_group {
-          &::before {
-            font-family: "FontAwesome";
-            content: "\f013";
+          .edit_icon {
             position: relative;
-            bottom: 1.5em;
-            left: -1.5em;
-            margin-right: 0.1em;
-            float: right;
+            padding-left: 200px;
+            top: -2em;
+            color: white;
           }
-          &::after {
-            font-family: "FontAwesome";
-            content: "\f044";
+          .cog_icon {
             position: relative;
-            bottom: 1.5em;
-            left: -2.0em;
-            margin-right: 0.1em;
-            margin-left: 50px;
-            float: right;
+            top: -2em;
+            color: white;
           }
+          // &::before {
+          //   font-family: "FontAwesome";
+          //   content: "\f013";
+          //   position: relative;
+          //   bottom: 1.5em;
+          //   left: -1.5em;
+          //   margin-right: 0.1em;
+          //   float: right;
+          // }
+          // &::after {
+          //   font-family: "FontAwesome";
+          //   content: "\f044";
+          //   position: relative;
+          //   bottom: 1.5em;
+          //   left: -2.0em;
+          //   margin-right: 0.1em;
+          //   margin-left: 50px;
+          //   float: right;
+          // }
         }
     }
     .chat__left_group {
