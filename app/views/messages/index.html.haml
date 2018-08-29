@@ -15,6 +15,7 @@
         %dl.search_form
           %dt
             %input{name: "search",placeholder: "type a message",type: "text",value: ""}/
-            = fa_icon 'image', class: 'img_icon'
+            = link_to do
+              = fa_icon 'image', class: 'img_icon'
           %dd
             %button Send
