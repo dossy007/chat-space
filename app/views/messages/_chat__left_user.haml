@@ -1,3 +1,8 @@
 .chat__left_user
-  .chat__left_user_name  dossy
+  .chat__left_user_name
+    = current_user.name
   .chat__left_user_new_group
+    = link_to do
+      = fa_icon 'edit', class: 'edit_icon'
+    = link_to edit_user_path(current_user) do
+      = fa_icon 'cog', class: 'cog_icon'
