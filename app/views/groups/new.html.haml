@@ -1,9 +1,10 @@
 .chat-group-form
   %h1 新規チャットグループ
-  %form#new_chat_group.new_chat_group{"accept-charset" => "UTF-8", action: "/chat_groups", method: "post"}
+  / %form#new_chat_group.new_chat_group{"accept-charset" => "UTF-8", action: "/chat_groups", method: "post"}
+  = form_for @group do |f|
+    if @group.errors.any?
     .chat-group-form__errors
-      %h2
-        1件のエラーが発生しました。
+      %h2= "#{@group.errors.full_messages.count}件のエラーが発生しました"
         %ul
           %li エラーです
     .chat-group-form__field.clearfix
