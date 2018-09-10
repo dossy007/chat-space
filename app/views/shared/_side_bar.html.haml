@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .chat
   .chat__left_user
     .chat__left_user_name
@@ -15,3 +16,21 @@
             = group.name
           %li.chat__left_group_recent_text
             メッセージはまだありません
+=======
+.chat__left_user
+  .chat__left_user_name
+    = current_user.name
+  .chat__left_user_new_group
+    = link_to new_group_path do
+      = fa_icon 'edit', class: 'edit_icon'
+    = link_to edit_user_path(current_user) do
+      = fa_icon 'cog', class: 'cog_icon'
+.chat__left_group
+  - current_user.groups.each do |group|
+    = link_to group_messages_path(group) do
+      %ul
+        %li.chat__left_group_name
+          = group.name
+        %li.chat__left_group_recent_text
+          メッセージはまだありません
+>>>>>>> master
