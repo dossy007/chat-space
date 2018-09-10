@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def update(create_params)
+  def update
   	if current_user.update(create_params)
   		redirect_to root_path
   	else
