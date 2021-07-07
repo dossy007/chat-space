@@ -47,8 +47,8 @@ Things you may want to cover:
 |-------|----|-------|
 |text|text|	|
 |image|string|	|
-|user_id|references|foreign_key:true|
-|group_id|references|foreign_key:true|
+|user|references|foreign_key:true|  ここはuser_idではなくuserにする！！
+|group|references|foreign_key:true|
 
 ## Asociation
 - belongs_to :user

@@ -1,19 +1,11 @@
 .chat
-  .chat__left
-    = render "chat__left_user"
-  .chat__right
-    .chat__right_group
-      %ul
-        .chat__right_group_button  edit
-        %li.chat__right_group_name
-        %li.chat__right_group_current_user membername :ddd
-        = render "chat__right_text"
+  = render "chat__left"
+  = render "chat__right"
     .chat__right_footer
-      %form{action: "/", method: "",name: "search"}
-        %dl.search_form
-          %dt
-            %input{name: "search",placeholder: "type a message",type: "text",value: ""}/
-            = link_to do
-              = fa_icon 'image', class: 'img_icon'
-          %dd
-            %button Send
+      = form_for [@group, @message] do |f|
+        = f.text_field :text, class: 'chat__right_footer_input', placeholder: 'type a message'
+        .chat__right_footer_img
+          = f.label :image do
+            = fa_icon 'picture-o', class: 'chat__right_footer_icon'
+            = f.file_field :image, style: "display:none;"
+        = f.submit 'Send', class: 'chat__right_footer_button'
